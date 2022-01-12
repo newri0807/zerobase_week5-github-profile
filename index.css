@@ -1,0 +1,285 @@
+* {
+  font-family: 'Pretendard-Regular';
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+h1,
+h2,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+main {
+  padding: 0 5rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+nav .layout-sidebar {
+  min-width: 30rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+  padding: 15px 0;
+  justify-items: flex-end;
+}
+
+nav ul li {
+  width: 7rem;
+  text-align: center;
+}
+
+nav ul li a {
+  cursor: pointer;
+}
+
+main .charts {
+  padding: 1rem 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: calc(100% - 10rem);
+}
+
+main .charts .google-chart {
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 1rem;
+  border: 1.5px solid #d8d8d8;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20rem;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.status .profile h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.status .profile h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.status .profile h4 {
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.status .profile img {
+  width: 20rem;
+  height: 20rem;
+  min-width: 20rem;
+  min-height: 20rem;
+  border-radius: 50%;
+  border: 1.5px solid #d8d8d8;
+  background: #fff;
+  margin: 2rem 0;
+}
+
+.status .profile .follow-infos {
+  margin-top: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.status .profile .follow-infos b {
+  margin-right: 0.2rem;
+}
+
+.status .profile .follow-infos span:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.status .profile .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.status .profile .details span:not(:first-child) {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.status .overview-wrapper {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 70rem;
+}
+
+.status .repositories {
+  width: calc(100% - 10rem);
+  margin-bottom: 4rem;
+  padding: 0 5rem;
+}
+
+.status .repositories h4,
+.contributions h4 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.status .repositories .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.status .repositories .repository {
+  display: flex;
+  height: 4rem;
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  padding: 1.2rem 1rem;
+  justify-content: space-between;
+}
+
+.status .repositories .repository .title {
+  display: inline-block;
+  font-size: 16px;
+  color: #0969da;
+  font-weight: 600;
+}
+
+.status .repositories .repository .public {
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  background-color: transparent;
+  border: 1px solid #d8d8d8;
+  color: #57606a;
+  height: fit-content;
+}
+
+.contributions .wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.contributions .commit-wrapper {
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  height: fit-content;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(48, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 3px;
+  width: fit-content;
+}
+
+.contributions .commit-wrapper span {
+  width: 10px;
+  height: 10px;
+  background: #ebedf0;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.contributions .commit-wrapper span.commit {
+  background: #40c463;
+}
+
+.contributions .commit-wrapper span.light-commit {
+  background: #9be9a8;
+}
+
+.contributions .commit-wrapper span.dark-commit {
+  background: #216e39;
+}
+
+.contributions .wrapper .commit-sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  width: 100%;
+}
+
+.contributions .wrapper .commit-sidebar button {
+  padding: 10px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #57606a;
+  background: transparent;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: left;
+  border-radius: 6px;
+  border: 0;
+}
+
+.contributions .wrapper .commit-sidebar button:hover {
+  background: #0969da;
+  color: white;
+}
+
+.guide-link{
+  color: #0969da;
+}
+
+@media (min-width: 458px) and (max-width: 768px) {
+  .status .repositories .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
