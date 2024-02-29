@@ -24,7 +24,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [newri0807/zerobase_week5-github-profile](https://github.com/newri0807/zerobase_week5-github-profile)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|3<br/>Tools used|01/05/24 <br/>Report generated|
+|3<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
